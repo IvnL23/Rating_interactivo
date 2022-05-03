@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap'); */
-
 * {
   font-family: "Overpass";
 }
@@ -14,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* contenedor principal */
 .principal {
   width: 400px;
   height: 400px;
@@ -86,12 +84,13 @@ body {
   font-weight: 700;
   font-size: 16px;
   width: 100%;
-  height: 5vh;
+  height: 2.5rem;
   border: none;
   border-radius: 20px;
   color: hsl(25, 97%, 53%);
   transition: 0.3s;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .boton-enviar:hover {
@@ -114,10 +113,6 @@ body {
   display: none;
 }
 
-/* .contenedor-enviar.activo{
-
-} */
-
 .img-enviado {
   margin: 40px;
   display: flex;
@@ -126,37 +121,103 @@ body {
 }
 
 .seccion-agradecimiento {
-    padding: 0 30px;
+  padding: 0 30px;
 }
 
 .p-seleccion {
   background-color: #1e3140;
   color: hsl(25, 97%, 53%);
   border-radius: 15px;
-  padding: 5px 15px;
   display: inline;
   font-size: 14px;
-  padding: 6px 15px ;
+  padding: 6px 15px;
   margin: 0 24%;
 }
 
-.p-gracias{
-    padding-top: 2rem;
-    font-weight: 700;
-    color: #fcffff;
-    font-size: 24px;
-    text-align: center;
+.p-gracias {
+  padding-top: 2rem;
+  font-weight: 700;
+  color: #fcffff;
+  font-size: 24px;
+  text-align: center;
 }
 
-.p-dedicatoria{
-    padding-top: 1rem;
+.p-dedicatoria {
+  padding-top: 1rem;
+  font-weight: 400;
+  color: hsl(216, 12%, 54%);
+  text-align: center;
+}
+
+/* adaptando a pantallas menores a 396px */
+@media (max-width: 396px) {
+  .principal {
+    width: 380px;
+    height: 380px;
+  }
+  .contenedor-enviar {
+    width: 95%;
+    height: 380px;
+  }
+
+  .p-seleccion {
+    font-size: 13px;
+    padding: 6px 6px;
+  }
+  .boton-satisfaccion {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 330px) {
+  .p-seleccion {
+    font-size: 10px;
+    padding: 6px 6px;
+  }
+}
+
+@media (max-width: 281px) {
+  .principal {
+    width: 95%;
+    height: 360px;
+  }
+
+  .pregunta {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 20px 0;
+    color: #fcffff;
+  }
+
+  .p-seleccion {
+    font-size: 9px;
+    padding: 6px 5px;
+  }
+
+  .Parrafo-comentario {
     font-weight: 400;
     color: hsl(216, 12%, 54%);
-    text-align:center;
+    font-size: 13px;
+  }
+
+  .boton-satisfaccion {
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+  }
+
+  .contenedor-enviar {
+    width: 95%;
+    height: 380px;
+  }
+
+  .p-gracias {
+    font-size: 22px;
+  }
+
+  .p-dedicatoria {
+    font-size: 12px;
+  }
 }
-
-
-/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-<style>
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); } */
