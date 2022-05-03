@@ -42,6 +42,7 @@ body {
   font-weight: 700;
   font-size: 22px;
   margin: 20px 0;
+  line-height: 1.4rem;
   color: #fcffff;
 }
 
@@ -49,6 +50,7 @@ body {
   font-weight: 400;
   color: hsl(216, 12%, 54%);
   font-size: 15px;
+  line-height: 1.4rem;
 }
 
 .contenedor-lista {
@@ -81,22 +83,26 @@ body {
 }
 
 .boton-enviar {
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 15px !important;
   width: 100%;
   height: 2.5rem;
   border: none;
   border-radius: 20px;
-  color: hsl(25, 97%, 53%);
+  color: #fcffff;
   transition: 0.3s;
   cursor: pointer;
   font-size: 18px;
+  background-color: hsl(25, 97%, 53%);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 
 .boton-enviar:hover {
-  background-color: hsl(25, 97%, 53%);
-  color: #fcffff;
+  background-color: #fcffff;
 }
+
+
 
 /* seccion agradecimiento */
 
@@ -147,13 +153,14 @@ body {
   font-weight: 400;
   color: hsl(216, 12%, 54%);
   text-align: center;
+  line-height: 1.4rem;
 }
 
 /* adaptando a pantallas menores a 396px */
 @media (max-width: 396px) {
   .principal {
     width: 380px;
-    height: 380px;
+    height: 400px;
   }
   .contenedor-enviar {
     width: 95%;
@@ -167,6 +174,9 @@ body {
   .boton-satisfaccion {
     width: 40px;
     height: 40px;
+  }
+  .boton-enviar {
+    height: 2.5rem;
   }
 }
 

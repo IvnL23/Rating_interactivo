@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
-    <title>Componente de clasificación interactivo</title>
+    <title>Interactive rating component</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/star.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,44 +13,36 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <main>
       <section class="contenedor">
         <!-- contenedor principal -->
-        <section class="principal">
+        <div class="principal">
           <div class="contenedor-estrella">
             <img id="img-estrella" src="images/icon-star.svg" alt="Estrella" />
           </div>
 
-          <section class="rating-text">
-            <h1 class="pregunta">¿Cómo lo hemos hecho?</h1>
+          <div class="rating-text">
+            <h1 class="pregunta">How did we do?</h1>
             <p class="Parrafo-comentario">
-              Por favor, háganos saber cómo lo hicimos con su solicitud de
-              apoyo. Todos los comentarios son apreciados para ayudarnos a
-              mejorar nuestra oferta!.
+              Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!
             </p>
 
-            <section class="contenedor-lista">
+            <div class="contenedor-lista">
               <button class="boton-satisfaccion">1</button>
               <button class="boton-satisfaccion">2</button>
               <button class="boton-satisfaccion">3</button>
               <button class="boton-satisfaccion">4</button>
               <button class="boton-satisfaccion">5</button>
-            </section>
-          </section>
+            </div>
+          </div>
 
-          <section class="contenedor-btoEnviar">
-            <button class="boton-enviar" id="boton-enviar">Enviar</button>
-          </section>
-        </section>
+          <div class="contenedor-btoEnviar">
+            <button class="boton-enviar" id="boton-enviar">Submit</button>
+          </div>
+        </div>
 
         <!-- Seccion agradecimiento -->
         <section class="contenedor-enviar">
@@ -58,19 +50,18 @@
             <img src="images/illustration-thank-you.svg" alt="Gracias!" />
           </div>
 
-          <section class="seccion-agradecimiento">
+          <div class="seccion-agradecimiento">
             <p class="p-seleccion">
-              Ha seleccionado
+              You selected
               <span id="estrella-elegida">0</span>
-              <span>de 5</span>
+              <span>out of 5</span>
             </p>
-            <p class="p-gracias">Gracias!</p>
+            <p class="p-gracias">Thank you!</p>
             <p class="p-dedicatoria">
-              Le agradecemos que se haya tomado el tiempo de dar una valoración.
-              Si alguna vez necesitas más apoyo, no dude en ponerse en contacto
-              con nosotros.
+              We appreciate you taking the time to give a rating. If you ever need more support, 
+              don’t hesitate to get in touch!            
             </p>
-          </section>
+          </div>
         </section>
       </section>
     </main>

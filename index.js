@@ -4,6 +4,7 @@ var botonEnviar = document.querySelector(".boton-enviar");
 var botonesEstrellas = document.getElementsByClassName("boton-satisfaccion");
 var valorRating = document.querySelector("#estrella-elegida");
 
+
 var valorSeleccionado = "";
 
 for (let i = 0; i < botonesEstrellas.length; i++) {
