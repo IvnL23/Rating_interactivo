@@ -60,20 +60,25 @@ body {
   justify-content: center;
 }
 
-.boton-satisfaccion {
+.btnScore {
   font-weight: 700;
   width: 50px;
   height: 50px;
   border-radius: 25px;
   border: none;
-  color: hsl(216, 12%, 54%);
   background-color: #262f38;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  color: white;
 }
 
-.boton-satisfaccion:hover {
+.activo {
+  background-color: hsl(21, 12%, 63%);
+  color: black;
+}
+
+.btnScore:hover {
   background-color: hsl(25, 97%, 53%);
   color: #fcffff;
 }
@@ -82,7 +87,7 @@ body {
   padding: 0 30px;
 }
 
-.boton-enviar {
+.btnSubmit {
   font-weight: 400;
   font-size: 15px !important;
   width: 100%;
@@ -98,11 +103,10 @@ body {
   text-transform: uppercase;
 }
 
-.boton-enviar:hover {
+.btnSubmit:hover {
+  color: hsl(25, 97%, 53%);
   background-color: #fcffff;
 }
-
-
 
 /* seccion agradecimiento */
 
@@ -171,11 +175,11 @@ body {
     font-size: 13px;
     padding: 6px 6px;
   }
-  .boton-satisfaccion {
+  .btnScore {
     width: 40px;
     height: 40px;
   }
-  .boton-enviar {
+  .btnSubmit {
     height: 2.5rem;
   }
 }
@@ -211,7 +215,7 @@ body {
     font-size: 13px;
   }
 
-  .boton-satisfaccion {
+  .btnScore {
     font-weight: 700;
     width: 25px;
     height: 25px;
